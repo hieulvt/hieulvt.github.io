@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Software Engineer | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of a Senior Software Engineer specializing in scalable web applications and AI tools.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Animated Blobs -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-panel main-nav">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">Dev<span class="accent-text">.</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="icon-button" aria-label="Toggle Theme">
+                <i data-lucide="moon" class="moon-icon"></i>
+                <i data-lucide="sun" class="sun-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-up">
+            <div class="hero-content">
+                <div class="badge glass-badge">Open to new opportunities</div>
+                <h1 class="hero-title">Crafting <span class="accent-gradient">Scalable Systems</span> & Fluid
+                    Experiences.</h1>
+                <p class="hero-subtitle">Senior Software Engineer specializing in distributed architectures, AI
+                    integration, and robust backend services. I turn complex problems into elegant solutions.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn primary-btn glass-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about fade-up">
+            <div class="glass-card about-card">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p>With over 5 years of experience building software for high-growth startups and enterprise
+                            clients, I bridge the gap between complex backend systems and seamless user experiences.</p>
+                        <p>My current focus is on integrating AI reasoning engines into traditional SaaS environments to
+                            boost productivity and unlock new capabilities.</p>
+
+                        <div class="skills-container">
+                            <span class="skill-tag glass-tag">JavaScript / TypeScript</span>
+                            <span class="skill-tag glass-tag">Python & Go</span>
+                            <span class="skill-tag glass-tag">React & Next.js</span>
+                            <span class="skill-tag glass-tag">Node.js</span>
+                            <span class="skill-tag glass-tag">PostgreSQL / Redis</span>
+                            <span class="skill-tag glass-tag">AWS / Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects fade-up">
+            <h2 class="section-title text-center">Featured Work</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="cpu" class="project-icon accent-text"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI Logic Engine</h3>
+                        <p class="project-desc">A Python-based rule engine that automates complex data processing
+                            pipelines and identifies anomalies using Machine Learning algorithms.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>FastAPI</span><span>TensorFlow</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="database" class="project-icon accent-text"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Distributed Task Queue</h3>
+                        <p class="project-desc">High-performance distributed task queue built mimicking Celery
+                            capabilities, designed for microservices communicating via RabbitMQ.</p>
+                        <div class="project-tech">
+                            <span>Go</span><span>RabbitMQ</span><span>Redis</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i data-lucide="layout-grid" class="project-icon accent-text"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">E-commerce API Gateway</h3>
+                        <p class="project-desc">Scalable RESTful API gateway handling 10k+ concurrent requests,
+                            orchestrating multiple underlying Go and Node.js microservices.</p>
+                        <div class="project-tech">
+                            <span>TypeScript</span><span>Express</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact fade-up">
+            <div class="glass-card contact-card">
+                <h2 class="section-title text-center">Let's Connect</h2>
+                <p class="text-center contact-text">I'm always open to discussing new projects, creative ideas or
+                    opportunities to be part of your visions.</p>
+                <div class="contact-methods">
+                    <a href="mailto:hello@example.com" class="btn primary-btn glass-btn">Say Hello <i
+                            data-lucide="send"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Senior Software Engineer. Built from scratch with Vanilla Web tech.</p>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
